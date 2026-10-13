@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .calculator {
+            width: 90%;
+            max-width: 430px;
+            padding: 35px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #5b45b5;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 22px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="number"]:focus {
+            border-color: #764ba2;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px 10px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+        }
+
+        .add {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+        }
+
+        .multiply {
+            background: linear-gradient(135deg, #4776e6, #8e54e9);
+        }
+
+        .result {
+            margin-top: 25px;
+            padding: 15px;
+            background: #f3f0ff;
+            border-radius: 10px;
+            text-align: center;
+            color: #5b45b5;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>🧮 Calculator</h1>
+        <p class="subtitle">Addition & Multiplication</p>
+
+        <form action="testing">
+
+            <label for="num1">Enter First Number</label>
+            <input type="number" id="num1" name="num1"
+                   placeholder="Enter first number" step="any" required>
+
+            <label for="num2">Enter Second Number</label>
+            <input type="number" id="num2" name="num2"
+                   placeholder="Enter second number" step="any" required>
+
+           <button type="submit" class="submit">
+                    Submit
+                </button>
+
+
+        </form>
+
+    </div>
+
+</body>
+</html>
